@@ -1,0 +1,50 @@
+.chats {
+    max-width: 700px;
+    overflow-y: scroll;
+    padding: 8rem;
+    /* Hide scrollbar */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    /* Add debugging styles */
+    border: 1px solid red; /* Temporary - to see if container is visible */
+    min-height: 200px;
+}
+
+.chats::-webkit-scrollbar {
+    display: none;
+}
+
+.chatItem {
+    margin-bottom: 1rem; /* Add spacing between messages */
+}
+
+.userDiv {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.9rem;
+}
+
+.gemDiv {
+    text-align: left;
+    font-size: 0.9rem;
+    margin-bottom: 1rem; /* Add spacing */
+}
+
+.userMessage {
+    background-color: #323232;
+    padding: 10px 20px;
+    border-radius: 14px;
+    margin-left: 15rem;
+    max-width: 500px;
+    width: fit-content;
+    color: white; /* Ensure text is visible */
+}
+
+.gemMessage {
+    background-color: #444;
+    padding: 10px 20px;
+    border-radius: 14px;
+    max-width: 500px;
+    width: fit-content;
+    color: white; /* Ensure text is visible */
+}
