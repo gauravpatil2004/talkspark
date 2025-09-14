@@ -80,11 +80,7 @@ function ChatWindow() {
                     <input type="text" placeholder="Ask me anything..." 
                     value={prompt}
                     onChange={(e) => setPrompt(e.target.value)}
-                    onKeyDown={(e) => {
-                        if (e.key === "Enter") {
-                            getReply();
-                        }
-                    }}
+                    onKeyDown={(e) => e.key === 'Enter' ? getReply() : ''}
                     />
                     <div id="submit" onClick={getReply}><i className="fa-solid fa-paper-plane"></i></div>
                 </div>
